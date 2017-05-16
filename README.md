@@ -1,15 +1,14 @@
-#About
-
+# About
 This is the lab on Chrome Headless.
 
 ```sh
 # install Chrome Canary
 brew install Caskroom/versions/google-chrome-canary
 
-#find Canary
+# find Canary
 sudo find / -type d -name "*Chrome Canary.app"
 
-#Not Installed
+# maybe you got not installed
 /Applications/Google Chrome Canary.app
 
 # runing
