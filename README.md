@@ -2,6 +2,10 @@
 This is the lab on Chrome Headless.
 
 ```sh
+# install chrome-remote-interface
+npm init --yes
+npm install --save chrome-remote-interface 
+
 # install Chrome Canary
 brew install Caskroom/versions/google-chrome-canary
 
