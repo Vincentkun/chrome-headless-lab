@@ -1,2 +1,17 @@
-# headless-lab
-Chrome Headless Lab
+#About
+
+This is the lab on Chrome Headless.
+
+```sh
+# install Chrome Canary
+brew install Caskroom/versions/google-chrome-canary
+
+#find Canary
+sudo find / -type d -name "*Chrome Canary.app"
+
+#Not Installed
+/Applications/Google Chrome Canary.app
+
+# runing
+/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org
+```
