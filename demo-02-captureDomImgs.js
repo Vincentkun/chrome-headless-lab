@@ -1,5 +1,8 @@
+'use strict';
+
+// 调用 node 模块
 const CDP = require("chrome-remote-interface");
- 
+
 CDP(chrome => {
   chrome.Page
     .enable()

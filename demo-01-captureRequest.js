@@ -1,16 +1,19 @@
+'use strict';
+
+// 调用 node 模块
 const CDP = require("chrome-remote-interface");
 
 CDP(client => {
-  // extract domains
+  // 提取域名
   const { Network, Page } = client;
-  // setup handlers
+  // 设置处理函数
   Network.requestWillBeSent(params => {
     console.log(params.request.url);
   });
   Page.loadEventFired(() => {
     client.close();
   });
-  // enable events then start!
+  // 开启事件 然后开始运行
   Promise.all([Network.enable(), Page.enable()])
     .then(() => {
       return Page.navigate({ url: "https://github.com" });
@@ -20,6 +23,6 @@ CDP(client => {
       client.close();
     });
 }).on("error", err => {
-  // cannot connect to the remote endpoint
+  // 无法连接到远程端点
   console.error(err);
 });
