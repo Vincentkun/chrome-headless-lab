@@ -18,3 +18,5 @@ sudo find / -type d -name "*Chrome Canary.app"
 # runing
 /Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org
 ```
+
+wiki: https://github.com/cyrus-and/chrome-remote-interface/wiki/Async-await-example
